@@ -16,6 +16,23 @@ class User{
 
     password : string;
 
+    
+    @Column()
+
+    cpf : string;
+
+    @Column()
+
+    telefone : string;
+
+    @Column()
+
+    whatsapp : string;
+
+    @Column()
+
+    inicio_plantus : Date;
+
     @Column()
 
     avatar : string;

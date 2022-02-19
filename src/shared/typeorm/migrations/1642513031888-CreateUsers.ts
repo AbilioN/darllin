@@ -35,6 +35,27 @@ export class CreateUsers1642513031888 implements MigrationInterface {
                         type: 'varchar',
                     },
                     {
+                        name: 'cpf',
+                        type : "varchar",
+                        isUnique : true,
+                    },
+                    {
+                        name: 'telefone',
+                        type : "varchar",
+                        isNullable : true,
+                    },
+                    {
+                        name: 'whatsapp',
+                        type : "varchar",
+                        isNullable : true,
+
+                    },
+                    {
+                        name: 'inicio_plantus',
+                        type : "date",
+                        isNullable : true,
+                    },
+                    {
                         name: 'avatar',
                         type: 'varchar',
                         isNullable : true

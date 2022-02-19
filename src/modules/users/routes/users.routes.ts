@@ -24,6 +24,7 @@ usersRouter.post(
             name: Joi.string().required(),
             email : Joi.string().required(),
             password : Joi.string().required(),
+            cpf: Joi.string().required(),
         }
     })
     ,

@@ -1,0 +1,19 @@
+{ 
+
+    "type": "mysql",
+    "host" : "localhost",
+    "port" : "3306",
+    "username" : "root",
+    "password" : "password",
+    "database" : "darllin",
+
+    "migrations" : [
+        "./src/shared/typeorm/migrations/*.ts"
+    ],
+    "cli" : {
+        "migrationDir" : "./src/shared/typeorm/migrations"
+    },
+    "entities" : [
+        "src/modules/**/typeorm/entities/**/*.ts"
+    ]
+}
