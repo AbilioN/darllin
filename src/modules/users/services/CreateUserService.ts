@@ -16,8 +16,6 @@ class CreateUserService
 {
     public async execute({name, email, password , cpf}: IRequest) : Promise<User>
     {
-        console.log('execute');
-        
         const usersRepository = getCustomRepository(UsersRepository);
         const emailExists = await usersRepository.findByEmail(email);
         if(emailExists)
